@@ -13,8 +13,8 @@
 
 #    If both Ethernet and Wifi are enabled, Wifi will take priority and Ethernet will be disabled.
 #        1=enabled
-AUTO_SETUP_NET_ETHERNET_ENABLED=1
-AUTO_SETUP_NET_WIFI_ENABLED=0
+AUTO_SETUP_NET_ETHERNET_ENABLED=0
+AUTO_SETUP_NET_WIFI_ENABLED=1
 
 #    If using WiFi, please edit the following to pre-enter creds /boot/dietpi-wifi.txt
 
@@ -49,7 +49,7 @@ AUTO_UNMASK_LOGIND=0
 #    Fully automate the installation
 #        1=Automated installation with no user inputs.
 #        It is HIGHLY recommended to also set CONFIG_BOOT_WAIT_FOR_NETWORK=2, to force infinite wait for network connection during boot, preventing no connection errors due to timeout.
-AUTO_SETUP_AUTOMATED=0
+AUTO_SETUP_AUTOMATED=2
 
 #    Global Password to be applied for the system
 #        Requires AUTO_SETUP_AUTOMATED=1
@@ -64,9 +64,9 @@ AUTO_SETUP_GLOBAL_PASSWORD=dietpi
 #    No limit on number entries, add as many as you need and uncomment the line.
 #    DietPi will automatically install all pre-reqs (eg: ALSA/XSERVER for desktops etc)
 #    - Examples:
-#AUTO_SETUP_INSTALL_SOFTWARE_ID=23    #will install Desktop LXDE
-#AUTO_SETUP_INSTALL_SOFTWARE_ID=74    #will install LAMP webserver stack
-#AUTO_SETUP_INSTALL_SOFTWARE_ID=44    #will install Bittorrent transmission
+AUTO_SETUP_INSTALL_SOFTWARE_ID=23    #will install Desktop LXDE
+AUTO_SETUP_INSTALL_SOFTWARE_ID=74    #will install LAMP webserver stack
+AUTO_SETUP_INSTALL_SOFTWARE_ID=44    #will install Bittorrent transmission
 
 #    DietPi-Software Choice System
 #    SSH Server Selection:
@@ -106,9 +106,9 @@ AUTO_SETUP_AUTOSTART_TARGET_INDEX=0
 #        Timezone eg: Europe/London America/New_York | Full list (TZ*): https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 AUTO_SETUP_TIMEZONE=Europe/London
 #        Locale eg: en_GB.UTF-8 / en_US.UTF-8 etc. One entry ONLY.
-AUTO_SETUP_LOCALE=en_GB.UTF-8
+AUTO_SETUP_LOCALE=en_
 #        Keyboard Layout eg: gb us de fr
-AUTO_SETUP_KEYBOARD_LAYOUT=gb
+AUTO_SETUP_KEYBOARD_LAYOUT=us
 
 #    Custom Script (pre-networking and pre-DietPi install) | Runs before DietPi installation and networking
 #        Allows you to automatically execute a custom script before networking and DietPi installation is started
